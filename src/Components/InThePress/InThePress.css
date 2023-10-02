@@ -1,0 +1,90 @@
+.press-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #EFEBE5;
+  height: 100vh;
+  position: relative;
+}
+.press-section h1 {
+  font-size: 2em;
+  position: absolute;
+  margin-top: 80px;
+}
+.press-section .press-image-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.press-section .press-image-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #623E2A;
+  opacity: 0.6;
+}
+.press-section .press-image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.press-section-container {
+  position: absolute;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  top: 30%;
+}
+
+.press-section-container-inner {
+  display: flex;
+  width: 100%;
+}
+
+.press-image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.press-quote-container {
+  flex-grow: 1;
+  min-height: 150px;
+  width: 30%;
+  margin-right: 30px;
+}
+.press-quote-container p {
+  margin-bottom: 30px;
+}
+.press-quote-container * {
+  word-wrap: break-word;
+}
+
+@media (max-width: 800px) {
+  .press-section h1 {
+    margin-top: 60px;
+  }
+  .press-section-container-inner {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .press-section-container {
+    top: 15%;
+  }
+  .press-quote-container {
+    width: auto;
+    margin-right: 0;
+    text-align: center;
+  }
+  .press-quote-container p {
+    margin-bottom: 15px;
+    text-align: start;
+  }
+}/*# sourceMappingURL=InThePress.css.map */

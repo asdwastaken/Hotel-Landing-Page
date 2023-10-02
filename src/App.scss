@@ -1,0 +1,52 @@
+@import './scss/config';
+@import './scss/mixins';
+@import './scss/functions';
+
+
+body {
+    font-size: 20px;
+    background-color: #F4F1ED;
+    font-family: 'Noto Serif JP', serif;
+    padding-bottom: 80px;
+}
+
+
+
+.App,
+#root,
+.App-header {
+    height: 100vh;
+    width: 100%;
+}
+
+
+h2 {
+    font-weight: 400;
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.1em;
+}
+
+
+@media (max-width:1200px) {
+    body{
+        font-size: 16px;
+    }
+}
+
+
+
+@media (max-width:1000px) {
+    body{
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width:500px) {
+    body{
+        font-size: 12px;
+    }
+}

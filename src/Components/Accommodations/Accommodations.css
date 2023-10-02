@@ -1,0 +1,112 @@
+.accommodations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #623E2A;
+  background-color: #EFEBE5;
+  width: 100%;
+  height: 100%;
+  margin-top: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.accommodations h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.accommodations-container {
+  height: 100%;
+  width: 80%;
+}
+
+.accommodations-container-inner {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.room-card {
+  width: 400px;
+  min-height: 180px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.15s ease-in-out;
+}
+.room-card:hover {
+  background-color: #ccbfac;
+  transform: scale(1.05);
+  border: 1px solid #623E2A;
+}
+.room-card:hover .room-card-description {
+  border: none;
+  border-top: 1px solid #623E2A;
+}
+
+.room-card-description {
+  margin-top: 30px;
+  border: 1px solid #623E2A;
+  padding: 30px;
+  width: 100%;
+  min-height: 180px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.room-card-description * {
+  left: 30px;
+  word-wrap: break-word;
+}
+.room-card-description span {
+  font-size: 0.8em;
+}
+.room-card-description .room-title {
+  margin-top: 30px;
+  font-size: 1.2em;
+}
+.room-card-description .room-price {
+  margin-top: 10px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+  .carousel-image {
+    height: 250px;
+  }
+}
+@media (max-width: 800px) {
+  .accommodations {
+    padding-bottom: 0;
+    padding-top: 60px;
+    margin-top: 60px;
+  }
+  .accommodations-container-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .accommodations-container-inner .room-card {
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+  .room-card-description {
+    min-height: auto;
+  }
+}
+@media (min-width: 350px) and (max-width: 499px) {
+  .room-card {
+    width: 300px;
+  }
+}
+@media (max-width: 349px) {
+  .room-card {
+    width: 280px;
+  }
+}/*# sourceMappingURL=Accommodations.css.map */
